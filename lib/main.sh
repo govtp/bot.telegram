@@ -1,5 +1,10 @@
+#!/bin/bash
+
+bot=$(source . ./bot.sh)
 
 echo "main:\n"
+
+
 
 echo "$@"
 
