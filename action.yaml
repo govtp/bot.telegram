@@ -1,1 +1,23 @@
-#
+name: 'Telegram Bot'
+description: ''
+author: 'ittp'
+branding:
+  icon: 'send'
+  color: 'blue'
+inputs:
+  botToken:
+    description: 'The Telegram Bot token'
+    required: true
+  chatId:
+    description: 'The target to which the message will be sent, can be a Telegram Channel or Group'
+    required: true
+  command:
+    description: "trigger commands"
+    default: '/start'
+  handler:
+    description: "action on command"
+    default: 'handler.auth'
+runs:
+  using: 'node16'
+  main: 'lib/main.js'
+
