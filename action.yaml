@@ -18,6 +18,6 @@ inputs:
     description: "action on command"
     default: 'handler.auth'
 runs:
-  using: 'node16'
-  main: 'lib/main.js'
+  using: 'bash'
+  main: 'lib/main.sh'
 
