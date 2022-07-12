@@ -5,7 +5,7 @@ VERSION="1.5.0"
 
 # default token and chatid
 # or run BaTbot with option: -t <token>
-TELEGRAMTOKEN="-YOUR-BOT-TOKEN-HERE-";
+TELEGRAMTOKEN="${token}";
 
 # how many seconds between check for new messages
 # or run Batbot with option: -c <seconds>
@@ -19,6 +19,9 @@ CHECKNEWMSG=2;
 # it could expose your bot to RCE vulnerability.
 
 declare -A botcommands
+
+#source ../command/
+
 botcommands=(
 
 	["/start"]='echo "Hi @FIRSTNAME, pleased to meet you :)"'
